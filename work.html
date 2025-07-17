@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulathisi Madubashana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-png" href="E:\pulathisimadubashana web\favicon-32x32.png">
+</head>
+<body class="relative overflow-x-hidden">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-dark transition-opacity duration-500">
+        <div class="relative w-24 h-24">
+            <div class="absolute inset-0 border-4 border-t-orange-500 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin"></div>
+            <div class="absolute inset-4 border-4 border-t-transparent border-r-orange-500 border-b-transparent border-l-transparent rounded-full animate-spin-reverse"></div>
+            <div class="absolute inset-8 border-4 border-t-transparent border-r-transparent border-b-orange-500 border-l-transparent rounded-full animate-spin"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-dark bg-opacity-90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-orange-500 font-bold text-xl flex items-center">
+                        <span class="mr-2">PM</span>
+                        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-dark font-bold">P</div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-light hover:text-orange-500 transition duration-300">Home</a>
+                    <a href="index.html#services" class="text-light hover:text-orange-500 transition duration-300">Services</a>
+                    <a href="work.html" class="text-light hover:text-orange-500 transition duration-300">My Work</a>
+                    <a href="index.html#about" class="text-light hover:text-orange-500 transition duration-300">About</a>
+                    <a href="index.html#contact" class="text-light hover:text-orange-500 transition duration-300">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-light focus:outline-none">
+                        <div class="hamburger-top w-6 h-0.5 bg-light mb-1.5"></div>
+                        <div class="hamburger-middle w-6 h-0.5 bg-light mb-1.5"></div>
+                        <div class="hamburger-bottom w-6 h-0.5 bg-light"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darker bg-opacity-95 backdrop-blur-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#home" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">Home</a>
+                <a href="index.html#services" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">Services</a>
+                <a href="work.html" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">My Work</a>
+                <a href="index.html#about" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">About</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Works Portfolio -->
+
+    <title>Recent Works Portfolio</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neonPink: '#ff00ff',
+                        neonOrange: '#ff5e00',
+                        neonBlue: '#00f7ff',
+                        darkBg: '#0f0f1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 active" data-filter="all">
+                All Projects
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700" data-filter="web">
+                <i class="fas fa-pen-nib mr-2"></i>Design
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700" data-filter="app">
+                <i class="fas fa-camera mr-2"></i>Photography
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700" data-filter="brand">
+                <i class="fas fa-video-camera mr-2"></i>Videography
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700" data-filter="Drone">
+                <i class="fas fa-Dron-camera mr-2"></i>Drone
+            </button>
+            
+        </div>
+ 
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">        
+
+            <!-- Project 1 - Design 01-->
+            <div class="project-card" data-category="web">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\kelewadda.webp" 
+                             alt="Design" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Design
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Flyer Design</h3>
+                        <p class="text-gray-400 mb-4">I designed this official flyer for the Sinhala music video "Kele Wedda" by Ramiya. It features a jungle theme with bold visuals to match the song’s vibe.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 - Design 02-->
+            <div class="project-card" data-category="web">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\Vesakpoater.jpg" 
+                             alt="Design" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Design
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Poster Design</h3>
+                        <p class="text-gray-400 mb-4">This poster was created to promote a special Badha Pooja at the Kirioya Bodhimaluwa Aranya Senasana on the occasion of Vesak Poya Day 2024.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 - Design 03-->
+            <div class="project-card" data-category="web">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\Meme Lanka.webp" 
+                             alt="Design" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Design
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Logo Design</h3>
+                        <p class="text-gray-400 mb-4">A logo designed for 'Meme Lanka' a social media brand focused on Sri Lankan humor. The goal was to create a simple yet memorable design that targets a youth audience by blending a local identity with a sense of fun.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 - Videography 01-->
+            <div class="project-card" data-category="brand">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\videogrphy01.webp" 
+                             alt="Videography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonOrange text-white">
+                            Videography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Videography</h3>
+                        <p class="text-gray-400 mb-4">A video created to cover the noble ceremony of a child's Buddhist ordination. Calm visual effects and thoughtful editing techniques were used to convey the reverence and spiritual value of this sacred occasion to the viewer.</p>
+                        <div class="mt-auto">
+                            <a href="https://www.youtube.com/watch?v=5S_cpFp-SHs&ab_channel=PulathisiMadubashana" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonOrange to-neonPink rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project 1 - Drone 01-->
+            <div class="project-card" data-category="Drone">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\IMG_20240528_201610_653.webp" 
+                             alt="Drone" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Drone
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Drone</h3>
+                        <p class="text-gray-400 mb-4">A photograph capturing the splendor of the Sri Lankan highlands from the air. Here, the mist-bathed forest and the distant mountain range are brought to life through a moody, cinematic color grade.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 - Videography 02-->
+            <div class="project-card" data-category="brand">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\video03.webp" 
+                             alt="Videography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonOrange text-white">
+                            Videography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Videography</h3>
+                        <p class="text-gray-400 mb-4">The official music video for the song "Kele Wadda" by artist RAMIYA. The project utilized rugged landscapes and cinematic aerial shots to visually construct the rustic, natural, and primal feeling of the song.</p>
+                        <div class="mt-auto">
+                            <a href="https://www.youtube.com/watch?v=Ge5LNzrTgog&list=RDGe5LNzrTgog&start_radio=1&ab_channel=%E0%B6%AD%E0%B6%B1%E0%B7%92%E0%B6%85%E0%B6%BD%E0%B7%92%E0%B6%BA%E0%B7%8F-AliyaArt" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonOrange to-neonPink rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 - Photography 01-->
+            <div class="project-card" data-category="app">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\isuru.webp" 
+                             alt="Photography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonBlue text-white">
+                            Photography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Photography</h3>
+                        <p class="text-gray-400 mb-4">A photograph that captures modern technology and the beauty of nature within a single frame. The aim was to create a thoughtful and natural portrait by using a shallow depth of field to beautifully blur the background and emphasize the subject.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonBlue to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 1 - Drone 02-->
+            <div class="project-card" data-category="Drone">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\IMG_20240528_201610_790.webp" 
+                             alt="Drone" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Drone
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Drone</h3>
+                        <p class="text-gray-400 mb-4">A photograph capturing the fresh and serene atmosphere of a morning in rural Sri Lanka from the air. Here, the misty valley, reflective paddy fields, and the distant mountain range combine to create a picturesque scene.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 - Videography 03-->
+            <div class="project-card" data-category="brand">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\videography02.webp" 
+                             alt="Videography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonOrange text-white">
+                            Videography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Videography</h3>
+                        <p class="text-gray-400 mb-4">The official music video for the song "Angale" by artist Milinda Geeth (M'Lin). This project heavily utilized cinematic visuals and high-quality aerial shots to visually interpret the song's mood and narrative.</p>
+                        <div class="mt-auto">
+                            <a href="https://www.youtube.com/watch?v=Wdw3WlqZkdA&list=RDWdw3WlqZkdA&start_radio=1&ab_channel=MilindaGeethMLIN" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonOrange to-neonBlue rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+            <a href="index.html" class="cta-btn inline-block px-8 py-3 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-bold text-lg hover:shadow-lg transition-all duration-300">
+                <i class="fas fa-arrow-left ml-2"></i> Back to Home
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Add hover effect to project cards
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.querySelector('.neon-border::before').style.opacity = '1';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.querySelector('.neon-border::before').style.opacity = '0';
+                });
+            });
+        });
+    </script>
+
+    
+    <!-- Footer -->
+    <footer class="bg-darker py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-orange-500 font-bold text-2xl flex items-center">
+                        <span class="mr-2">Pulathisi</span>
+                        <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-dark font-bold">PM</div>
+                    </a>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="index.html#home" class="text-light hover:text-orange-500 transition duration-300">Home</a>
+                    <a href="index.html#services" class="text-light hover:text-orange-500 transition duration-300">Services</a>
+                    <a href="work.html" class="text-light hover:text-orange-500 transition duration-300">My Work</a>
+                    <a href="index.html#about" class="text-light hover:text-orange-500 transition duration-300">About</a>
+                    <a href="index.html#contact" class="text-light hover:text-orange-500 transition duration-300">Contact</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/kadpulathisimadubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.behance.net%2Fpulathisimadubashana%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExQlhjcFVjc0FVRDN0d3JqQQEeSG5sM77KygWl8ErUYVknwiRwH-QlFaTgwouXiQ-xL1Cac_bG6szMiIU7DEQ_aem_OjRHGZR-8t6QjTqpN4fJEw&h=AT1qZHX_r7Fu7ciHPdqqOpuGku9MdWOTqlQAXcuKN6fRuDygHhVh4N258jQTQvHJM4rq0qwNJk5NuGp1Fg8oA0lDvHR_dmvSEf_sRhgIbSVXR8McYOX_SKjumaT51lbQqUrkAA" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-dark/50 pt-8 text-center">
+                <p class="text-light/60">
+                    &copy; Copyright 2025. ┃ All rights reserved. ┃ Designed by <a href="index.html" class="text-red-400 hover:text-orange-500 transition duplicate duration-300">Me</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="work.html" id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-dark shadow-lg hover:bg-orange-600 transition duration-300 opacity-0 invisible transform translate-y-4">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Background Music Toggle -->
+    <button id="music-toggle" class="fixed bottom-8 left-8 w-12 h-12 bg-dark rounded-full flex items-center justify-center text-light shadow-lg hover:bg-orange-500 hover:text-dark transition duration-300">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', function() {
+            menuBtn.classList.toggle('open');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                menuBtn.classList.remove('open');
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+            }
+        });
+
+        // Animate elements on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Skill bars animation
+        const animateSkills = function() {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        };
+
+        // Check if skills section is in view
+        const skillsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateSkills();
+                    skillsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        const skillsSection = document.querySelector('#about');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // Background Music Toggle
+        const musicToggle = document.getElementById('music-toggle');
+        let audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+        audio.loop = true;
+        let isPlaying = false;
+        
+        musicToggle.addEventListener('click', function() {
+            if (isPlaying) {
+                audio.pause();
+                musicToggle.innerHTML = '<i class="fas fa-music"></i>';
+                musicToggle.classList.remove('bg-orange-500', 'text-dark');
+                musicToggle.classList.add('bg-dark', 'text-light');
+            } else {
+                audio.play();
+                musicToggle.innerHTML = '<i class="fas fa-pause"></i>';
+                musicToggle.classList.remove('bg-dark', 'text-light');
+                musicToggle.classList.add('bg-orange-500', 'text-dark');
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                // Simulate form submission
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    
+                    // Reset form
+                    setTimeout(() => {
+                        this.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Show success message
+                        alert('Thank you for your message! I will get back to you soon.');
+                    }, 1500);
+                }, 2000);
+            });
+        }
+
+        // Initialize particles.js if available
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('Particles.js loaded successfully');
+            });
+        } else {
+            console.log('Particles.js not loaded');
+        }
+    </script>
+
+    <!-- Load particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Fallback particles configuration if particles.json fails to load
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ff6b35"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ff6b35",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 2,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 140,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+    </script>
+</body>
+<script src="scripts.js"></script>
+</html>

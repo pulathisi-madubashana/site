@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulathisi Madubashana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-png" href="E:\pulathisimadubashana web\favicon-32x32.png">
+</head>
+<body class="relative overflow-x-hidden">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-dark transition-opacity duration-500">
+        <div class="relative w-24 h-24">
+            <div class="absolute inset-0 border-4 border-t-orange-500 border-r-transparent border-b-transparent border-l-transparent rounded-full animate-spin"></div>
+            <div class="absolute inset-4 border-4 border-t-transparent border-r-orange-500 border-b-transparent border-l-transparent rounded-full animate-spin-reverse"></div>
+            <div class="absolute inset-8 border-4 border-t-transparent border-r-transparent border-b-orange-500 border-l-transparent rounded-full animate-spin"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 bg-dark bg-opacity-90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-orange-500 font-bold text-xl flex items-center">
+                        <span class="mr-2">PM</span>
+                        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-dark font-bold">P</div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-light hover:text-orange-500 transition duration-300">Home</a>
+                    <a href="#services" class="text-light hover:text-orange-500 transition duration-300">Services</a>
+                    <a href="work.html" class="text-light hover:text-orange-500 transition duration-300">My Work</a>
+                    <a href="#about" class="text-light hover:text-orange-500 transition duration-300">About</a>
+                    <a href="#contact" class="text-light hover:text-orange-500 transition duration-300">Contact</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-light focus:outline-none">
+                        <div class="hamburger-top w-6 h-0.5 bg-light mb-1.5"></div>
+                        <div class="hamburger-middle w-6 h-0.5 bg-light mb-1.5"></div>
+                        <div class="hamburger-bottom w-6 h-0.5 bg-light"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-darker bg-opacity-95 backdrop-blur-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">Home</a>
+                <a href="#services" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">Services</a>
+                <a href="work.html" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">My Work</a>
+                <a href="#about" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">About</a>
+                <a href="#contact" class="block px-3 py-2 text-light hover:text-orange-500 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div id="particles-js"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/30 to-dark/90"></div>
+        
+        <div class="container mx-auto px-6 z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-light">
+                        <span class="text-orange-500">Pulathisi</span> Madubashana
+                    </h1>
+                    <h2 class="text-xl md:text-2xl mb-6 text-light opacity-90">
+                        Creative Visuals <span class="text-orange-500">by</span> Multi-Talented Professional
+                    </h2>
+                    <p class="text-light/80 mb-8 max-w-lg">
+                        Transforming ideas into stunning visual experiences through graphic design, photography, videography, and content creation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-orange-500 text-dark font-medium rounded-full hover:bg-orange-600 transition duration-300 transform hover:scale-105">
+                            Get In Touch
+                        </a>
+                        <a href="work.html" class="px-6 py-3 border border-orange-500 text-orange-500 font-medium rounded-full hover:bg-orange-500 hover:text-dark transition duration-300 transform hover:scale-105">
+                            View Work
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center fade-in delay-1">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                        <div class="absolute inset-0 bg-orange-500 rounded-full opacity-20 animate-pulse"></div>
+                        <div class="absolute inset-4 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full shadow-xl animate-float">
+                            <img src="E:\pulathisimadubashana web\IMG_20762.jpg" 
+                                 alt="Pulathisi Madubashana" 
+                                 class="w-full h-full rounded-full object-cover border-4 border-dark">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#services" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-light hover:text-orange-500 transition duration-300 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">
+                    My <span class="text-orange-500">Services</span>
+                </h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-light/80 max-w-2xl mx-auto">
+                    Comprehensive creative services to bring your vision to life with professional quality and artistic flair.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-dark rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 fade-in delay-1">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-light">Graphic Design</h3>
+                    <p class="text-light/80 mb-4">
+                        Creative visual solutions for branding, marketing materials, and digital graphics that communicate your message effectively.
+                    </p>
+                    <ul class="text-light/70 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Logo & Brand Identity
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Print & Digital Media
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Social Media Graphics
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-dark rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 fade-in delay-2">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-light">Photography</h3>
+                    <p class="text-light/80 mb-4">
+                        Professional photography services capturing moments, products, and portraits with artistic vision and technical excellence.
+                    </p>
+                    <ul class="text-light/70 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Portrait & Event Photography
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Product & Commercial Shoots
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Professional Editing
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-dark rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 fade-in delay-3">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-light">Videography</h3>
+                    <p class="text-light/80 mb-4">
+                        High-quality video production from concept to final edit, telling compelling stories through moving images.
+                    </p>
+                    <ul class="text-light/70 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Commercial & Promotional Videos
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Event Coverage
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Cinematic Storytelling
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-dark rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 fade-in delay-1">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-drone-alt text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-light">Drone Services</h3>
+                    <p class="text-light/80 mb-4">
+                        Aerial photography and videography providing unique perspectives and breathtaking views from above.
+                    </p>
+                    <ul class="text-light/70 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Aerial Photography
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Drone Videography
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Mapping & Surveying
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-dark rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 fade-in delay-2">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-film text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-light">Video Editing</h3>
+                    <p class="text-light/80 mb-4">
+                        Professional post-production services to polish your footage into compelling, engaging video content.
+                    </p>
+                    <ul class="text-light/70 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Color Grading & Correction
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Motion Graphics
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Sound Design
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-dark rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 fade-in delay-3">
+                    <div class="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-light">Content Creation</h3>
+                    <p class="text-light/80 mb-4">
+                        Strategic content development and creation tailored to your brand's voice and marketing goals.
+                    </p>
+                    <ul class="text-light/70 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Social Media Content
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Marketing Campaigns
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-orange-500 mr-2 text-sm"></i>
+                            Creative Strategy
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Portfolio -->
+
+    <title>Recent Works Portfolio</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neonPink: '#ff00ff',
+                        neonOrange: '#ff5e00',
+                        neonBlue: '#00f7ff',
+                        darkBg: '#0f0f1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+   
+     <div class="relative">
+                <div class="slider-container flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 scroll-smooth" id="socialSlider">
+                    <!-- TikTok Post 1 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="E:\pulathisimadubashana web\img\tiktok.png" alt="TikTok Post" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-tiktok text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">TikTok Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">මොරගහකන්ද ජලාශයේ සීදී යාම නිසා මතුවුනු පරන - ම/නා ඇළගමුව මහා විද්‍යාලය #fy</p>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana/video/7271104168855604487" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- TikTok Post 2 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="E:\pulathisimadubashana web\img\tiktok.webp" alt="TikTok Post" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-tiktok text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">TikTok Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">"ආයෙමත් වාරයක්" මොරගහකන්ද ජලාශයට යටවුනු පාසලක මැකීගිය කතාව..</p>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana/video/7274464376055205127" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- YouTube Video 1 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="https://i.ytimg.com/vi/5S_cpFp-SHs/maxresdefault.jpg" alt="YouTube Video" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-youtube text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">YouTube Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">සංසාරේ දුක දැකලා කලකිරුණා අමිමේ | කුල දරුවෙකු සසුන් ගත කිරීමේ මහා පිංකම 🙏🙏</p>
+                            <a href="https://youtu.be/5S_cpFp-SHs?si=lvYF-SjLD1gWcNb0" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Facebook Video 1 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="E:\pulathisimadubashana web\img\facebook.webp" alt="Facebook Video" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-facebook text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">Facebook Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">මේ උබ හවසට මොකද කරන්නේ</p>
+                            <a href="https://www.facebook.com/kadpulathisimadubashana/videos/559044083135485" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                     <!-- TikTok Post 3 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="E:\pulathisimadubashana web\img\tiktok02.webp" alt="TikTok Post" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-tiktok text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">TikTok Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">මගෙ පොඩි Gaming Room එක</p>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana/photo/7291199104196136210" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- YouTube Video 2 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="https://i.ytimg.com/vi/MiYLEMzmT6Q/maxresdefault.jpg" alt="YouTube Video" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-youtube text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">YouTube Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">මහානුභාව සම්පන්න ඖෂධ 108 කින් සමන්විත වූ මහා ඖෂධ පූජාව | කිරිඔය බෝධිමළු විවේක සේනාසනය | 2024/05/23</p>
+                            <a href="https://youtu.be/MiYLEMzmT6Q?si=t1qlMvHzq5ksw7oZ" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TikTok Post 3 -->
+                    <div class="social-card snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden">
+                        <div class="relative">
+                            <img src="E:\pulathisimadubashana web\img\tiktik03.webp" alt="TikTok Post" class="w-full h-48 object-cover">
+                            <div class="absolute top-2 right-2 bg-black bg-opacity-70 rounded-full p-2">
+                                <i class="fab fa-tiktok text-xl neon-orange"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-2">TikTok Video</h3>
+                            <p class="text-gray-300 text-sm mb-4">කැලේ ගනකම කුලේ දැනගෙන හිතාපන් යාලු...කැලේ වැද්දට, සුද්ද කිව්වෙත්...Nice to meet you... ලු.......</p>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana/video/7405608174738246919" target="_blank" class="watch-btn inline-block px-4 py-2 rounded-full border neon-orange-border text-white hover:text-white">
+                                Watch Now <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- View All Button -->
+                    <div class="snap-center flex-shrink-0 w-80 md:w-96 rounded-xl overflow-hidden flex items-center justify-center">
+                        <div class="text-center p-8">
+                            <i class="fas fa-arrow-right text-5xl neon-orange mb-4"></i>
+                            <h3 class="font-bold text-2xl mb-2">View All Posts</h3>
+                            <p class="text-gray-300 mb-6">Check out my full TikTok and YouTube profiles</p>
+                            <div class="flex justify-center gap-4">
+                                <a href="https://www.tiktok.com/@pulathisi_madubashana" target="_blank" class="watch-btn inline-block px-6 py-3 rounded-full neon-orange-bg text-black font-bold">
+                                    <i class="fab fa-tiktok mr-2"></i> TikTok
+                                </a>
+                                <a href="https://www.youtube.com/@pulathisi_madubashana" target="_blank" class="watch-btn inline-block px-6 py-3 rounded-full neon-orange-bg text-black font-bold">
+                                    <i class="fab fa-youtube mr-2"></i> YouTube
+                                </a>
+                                <a href="https://www.facebook.com/kadpulathisimadubashana" target="_blank" class="watch-btn inline-block px-6 py-3 rounded-full neon-orange-bg text-black font-bold">
+                                    <i class="fab fa-facebook mr-2"></i> Facebook
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-black bg-opacity-70 rounded-full w-10 h-10 flex items-center justify-center neon-orange-border border hover:neon-glow z-10">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-black bg-opacity-70 rounded-full w-10 h-10 flex items-center justify-center neon-orange-border border hover:neon-glow z-10">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('socialSlider');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const cards = document.querySelectorAll('.social-card');
+            const cardWidth = cards[0].offsetWidth + 24; // width + gap
+            
+            let autoScrollInterval;
+            let isHovering = false;
+            
+            // Auto-scroll functionality
+            function startAutoScroll() {
+                autoScrollInterval = setInterval(() => {
+                    if (!isHovering) {
+                        slider.scrollLeft += cardWidth;
+                        
+                        // If we've reached the end, scroll back to start
+                        if (slider.scrollLeft >= (slider.scrollWidth - slider.offsetWidth - cardWidth)) {
+                            setTimeout(() => {
+                                slider.scrollTo({
+                                    left: 0,
+                                    behavior: 'smooth'
+                                });
+                            }, 1000);
+                        }
+                    }
+                }, 3000);
+            }
+            
+            // Initialize auto-scroll
+            startAutoScroll();
+            
+            // Pause on hover
+            slider.addEventListener('mouseenter', () => {
+                isHovering = true;
+                clearInterval(autoScrollInterval);
+            });
+            
+            slider.addEventListener('mouseleave', () => {
+                isHovering = false;
+                startAutoScroll();
+            });
+            
+            // Manual navigation
+            nextBtn.addEventListener('click', () => {
+                slider.scrollBy({
+                    left: cardWidth,
+                    behavior: 'smooth'
+                });
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                slider.scrollBy({
+                    left: -cardWidth,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Touch/swipe support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            slider.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, {passive: true});
+            
+            slider.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, {passive: true});
+            
+            function handleSwipe() {
+                const threshold = 50;
+                
+                if (touchEndX < touchStartX - threshold) {
+                    // Swipe left - next
+                    slider.scrollBy({
+                        left: cardWidth,
+                        behavior: 'smooth'
+                    });
+                } else if (touchEndX > touchStartX + threshold) {
+                    // Swipe right - previous
+                    slider.scrollBy({
+                        left: -cardWidth,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            
+            // Responsive adjustments
+            function handleResize() {
+                const newCardWidth = document.querySelector('.social-card').offsetWidth + 24;
+                if (newCardWidth !== cardWidth) {
+                    cardWidth = newCardWidth;
+                }
+            }
+            
+            window.addEventListener('resize', handleResize);
+        });
+    </script>
+
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-neonPink to-neonOrange inline-block">
+                Recent Works
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                A showcase of my recent creative projects across different mediums and industries.
+            </p>
+        </div>
+        
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <button class="filter-btn px-6 py-2 rounded-full bg-gray-800 text-white hover:bg-gray-700 active" data-filter="all">
+                All Projects
+            </button>                 
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+    
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 - Design 01-->
+            <div class="project-card" data-category="web">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\kelewadda.webp" 
+                             alt="Design" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Design
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Flyer Design</h3>
+                        <p class="text-gray-400 mb-4">I designed this official flyer for the Sinhala music video "Kele Wedda" by Ramiya. It features a jungle theme with bold visuals to match the song’s vibe.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 1 - Design 02-->
+            <div class="project-card" data-category="web">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\Vesakpoater.jpg" 
+                             alt="Design" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Design
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Poster Design</h3>
+                        <p class="text-gray-400 mb-4">This poster was created to promote a special Badha Pooja at the Kirioya Bodhimaluwa Aranya Senasana on the occasion of Vesak Poya Day 2024.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 1 - Design 03-->
+            <div class="project-card" data-category="web">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\Meme Lanka.webp" 
+                             alt="Design" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonPink text-white">
+                            Design
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Logo Design</h3>
+                        <p class="text-gray-400 mb-4">A logo designed for 'Meme Lanka' a social media brand focused on Sri Lankan humor. The goal was to create a simple yet memorable design that targets a youth audience by blending a local identity with a sense of fun.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 - Videography -->
+            <div class="project-card" data-category="brand">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\videogrphy01.webp" 
+                             alt="Videography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonOrange text-white">
+                            Videography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Videography</h3>
+                        <p class="text-gray-400 mb-4">A video created to cover the noble ceremony of a child's Buddhist ordination. Calm visual effects and thoughtful editing techniques were used to convey the reverence and spiritual value of this sacred occasion to the viewer.</p>
+                        <div class="mt-auto">
+                            <a href="https://www.youtube.com/watch?v=5S_cpFp-SHs&ab_channel=PulathisiMadubashana" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonOrange to-neonPink rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 - Photography -->
+            <div class="project-card" data-category="app">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\isuru.webp" 
+                             alt="Photography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonBlue text-white">
+                            Photography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Photography</h3>
+                        <p class="text-gray-400 mb-4">A photograph that captures modern technology and the beauty of nature within a single frame. The aim was to create a thoughtful and natural portrait by using a shallow depth of field to beautifully blur the background and emphasize the subject.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonBlue to-neonOrange rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 7 - Videography -->
+            <div class="project-card" data-category="brand">
+                <div class="neon-border rounded-lg h-full flex flex-col">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="E:\pulathisimadubashana web\img\videography02.webp" 
+                             alt="Videography" 
+                             class="project-image w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-neonOrange text-white">
+                            Videography
+                        </span>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-b-lg flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Videography</h3>
+                        <p class="text-gray-400 mb-4">The official music video for the song "Angale" by artist Milinda Geeth (M'Lin). This project heavily utilized cinematic visuals and high-quality aerial shots to visually interpret the song's mood and narrative.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="demo-btn inline-block px-6 py-2 bg-gradient-to-r from-neonOrange to-neonBlue rounded-full text-white font-medium">
+                                View Demo <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
+       
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+            <h3 class="text-2xl sm:text-3xl font-bold mb-6">Want to see more of my work?</h3>
+            <a href="work.html" class="cta-btn inline-block px-8 py-3 bg-gradient-to-r from-neonPink to-neonOrange rounded-full text-white font-bold text-lg hover:shadow-lg transition-all duration-300">
+                Explore Full Portfolio <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter projects
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Add hover effect to project cards
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.querySelector('.neon-border::before').style.opacity = '1';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.querySelector('.neon-border::before').style.opacity = '0';
+                });
+            });
+        });
+    </script>
+
+    <!-- Portfolio Section -->
+<!--    <section id="portfolio" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">
+                    My <span class="text-orange-500">Portfolio</span>
+                </h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-light/80 max-w-2xl mx-auto">
+                    A showcase of my recent creative projects across different mediums and industries.
+                </p>
+            </div>
+-->            
+            <!-- Portfolio Filter -->
+<!--            <div class="flex justify-center mb-12 fade-in delay-1">
+                <div class="inline-flex flex-wrap justify-center gap-2">
+                    <button class="px-4 py-2 rounded-full bg-orange-500 text-dark font-medium">All</button>
+                    <button class="px-4 py-2 rounded-full bg-dark/50 text-light hover:bg-orange-500 hover:text-dark transition duration-300">Design</button>
+                    <button class="px-4 py-2 rounded-full bg-dark/50 text-light hover:bg-orange-500 hover:text-dark transition duration-300">Photography</button>
+                    <button class="px-4 py-2 rounded-full bg-dark/50 text-light hover:bg-orange-500 hover:text-dark transition duration-300">Videography</button>
+                    <button class="px-4 py-2 rounded-full bg-dark/50 text-light hover:bg-orange-500 hover:text-dark transition duration-300">Drone</button>
+                </div>
+            </div>
+-->            
+            <!-- Portfolio Grid -->
+<!--            <div class="masonry-grid fade-in delay-2">
+-->
+                <!-- Project 1 -->
+<!--                <div class="masonry-item relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Brand Identity Project" 
+                         class="w-full h-auto transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <h3 class="text-xl font-bold text-light mb-2">Brand Identity</h3>
+                        <p class="text-light/80 mb-4">Complete branding package for a tech startup</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 hover:text-orange-400 transition duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+-->                
+                <!-- Project 2 -->
+<!--                <div class="masonry-item relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                         alt="Product Photography" 
+                         class="w-full h-auto transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <h3 class="text-xl font-bold text-light mb-2">Product Photography</h3>
+                        <p class="text-light/80 mb-4">Lifestyle product shots for e-commerce brand</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 hover:text-orange-400 transition duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+-->                
+                <!-- Project 3 -->
+<!--                <div class="masonry-item relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" 
+                         alt="Commercial Video" 
+                         class="w-full h-auto transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <h3 class="text-xl font-bold text-light mb-2">Commercial Video</h3>
+                        <p class="text-light/80 mb-4">30-second TV commercial for beverage company</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 hover:text-orange-400 transition duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+-->                
+                <!-- Project 4 -->
+<!--                <div class="masonry-item relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" 
+                         alt="Aerial Photography" 
+                         class="w-full h-auto transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <h3 class="text-xl font-bold text-light mb-2">Aerial Photography</h3>
+                        <p class="text-light/80 mb-4">Real estate development aerial documentation</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 hover:text-orange-400 transition duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+-->                
+                <!-- Project 5 -->
+<!--                <div class="masonry-item relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Social Media Campaign" 
+                         class="w-full h-auto transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <h3 class="text-xl font-bold text-light mb-2">Social Media Campaign</h3>
+                        <p class="text-light/80 mb-4">360° content creation for fashion brand</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 hover:text-orange-400 transition duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+-->                
+                <!-- Project 6 -->
+<!--                <div class="masonry-item relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Event Coverage" 
+                         class="w-full h-auto transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <h3 class="text-xl font-bold text-light mb-2">Event Coverage</h3>
+                        <p class="text-light/80 mb-4">Multi-camera corporate event production</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 hover:text-orange-400 transition duration-300">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in delay-3">
+                <a href="#" class="px-6 py-3 border border-orange-500 text-orange-500 font-medium rounded-full hover:bg-orange-500 hover:text-dark transition duration-300 inline-flex items-center">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12 fade-in">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto lg:mx-0">
+                        <div class="absolute inset-0 bg-orange-500/20 rounded-full animate-pulse"></div>
+                        <div class="absolute inset-4 bg-gradient-to-br from-dark to-darker rounded-full shadow-xl overflow-hidden">
+                            <img src="E:\pulathisimadubashana web\IMG_20762.jpg" 
+                                 alt="Pulathisi Madubashana" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 fade-in delay-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-light">
+                        About <span class="text-orange-500">Me</span>
+                    </h2>
+                    <div class="w-20 h-1 bg-orange-500 mb-6"></div>
+                    
+                    <p class="text-light/80 mb-6">
+                        I'm Pulathisi Madubashana, a multi-disciplinary creative professional with over 8 years of experience in visual storytelling. My passion lies in creating compelling visuals that communicate ideas effectively and leave lasting impressions.
+                    </p>
+                    
+                    <p class="text-light/80 mb-8">
+                        With expertise spanning graphic design, photography, videography, and drone cinematography, I offer a comprehensive approach to visual content creation. My work is characterized by attention to detail, technical precision, and a keen artistic eye.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4 text-light">My Skills</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-light">Graphic Design</span>
+                                    <span class="text-orange-500">85%</span>
+                                </div>
+                                <div class="w-full bg-dark rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-light">Photography</span>
+                                    <span class="text-orange-500">90%</span>
+                                </div>
+                                <div class="w-full bg-dark rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-light">Videography</span>
+                                    <span class="text-orange-500">88%</span>
+                                </div>
+                                <div class="w-full bg-dark rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-light">Drone Piloting</span>
+                                    <span class="text-orange-500">95%</span>
+                                </div>
+                                <div class="w-full bg-dark rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full skill-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-light">Video Editing</span>
+                                    <span class="text-orange-500">88%</span>
+                                </div>
+                                <div class="w-full bg-dark rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="px-6 py-3 bg-orange-500 text-dark font-medium rounded-full hover:bg-orange-600 transition duration-300 inline-flex items-center">
+                        Download CV <i class="fas fa-download ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Slide -->
+     
+<div class="logo-slider relative overflow-hidden py-6">
+            <div class="flex items-center animate-slide">
+                <!-- Duplicate the logos to create infinite loop effect -->
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="After_Effects" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Adobe_Premiere_Pro_Logo.svg" alt="Premiere_Pro" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg" alt="Lightroom" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Adobe_Systems_logo_and_wordmark.svg" alt="Adobe" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Adobe_Audition_CC_icon_%282020%29.svg" alt="Audition" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Adobe_Bridge_CC_2017_icon.png" alt="Bridge" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Html-1.svg" alt="Html" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="Css" class="h-full w-full object-contain">
+                </div>
+                
+
+                <!-- Duplicate the same logos again -->
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="After_Effects" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Adobe_Premiere_Pro_Logo.svg" alt="Premiere_Pro" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg" alt="Lightroom" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Adobe_Systems_logo_and_wordmark.svg" alt="Adobe" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Adobe_Audition_CC_icon_%282020%29.svg" alt="Audition" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Adobe_Bridge_CC_2017_icon.png" alt="Bridge" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Html-1.svg" alt="Html" class="h-full w-full object-contain">
+                </div>
+                <div class="logo-item bg-white rounded-lg shadow-sm p-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt="Css" class="h-full w-full object-contain">
+                </div>
+               
+                
+            </div>
+        </div>
+        
+        <div class="flex justify-center mt-12 space-x-4">
+            <button id="pauseBtn" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+                <i class="fas fa-pause mr-2"></i>Pause
+            </button>
+            <button id="playBtn" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition">
+                <i class="fas fa-play mr-2"></i>Play
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.animate-slide');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const playBtn = document.getElementById('playBtn');
+            
+            // Pause on hover is handled by CSS
+            // But we add JS controls as well
+            
+            pauseBtn.addEventListener('click', function() {
+                slider.style.animationPlayState = 'paused';
+            });
+            
+            playBtn.addEventListener('click', function() {
+                slider.style.animationPlayState = 'running';
+            });
+            
+            // Infinite loop effect - when animation completes, reset position
+            slider.addEventListener('animationiteration', function() {
+                // This is handled by the duplicate logos and CSS animation
+            });
+            
+            // Touch support for mobile devices
+            let touchStartX = 0;
+            let touchEndX = 0;
+            const sliderContainer = document.querySelector('.logo-slider');
+            
+            sliderContainer.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+                slider.style.animationPlayState = 'paused';
+            }, false);
+            
+            sliderContainer.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                slider.style.animationPlayState = 'running';
+            }, false);
+            
+            function handleSwipe() {
+                if (touchEndX < touchStartX) {
+                    // Swiped left
+                }
+                if (touchEndX > touchStartX) {
+                    // Swiped right
+                }
+            }
+        });
+    </script>
+
+    <!-- Testimonials Section -->
+<!--     <section id="testimonials" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">
+                    Client <span class="text-orange-500">Testimonials</span>
+                </h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-light/80 max-w-2xl mx-auto">
+                    What my clients say about working with me and the results we've achieved together.
+                </p>
+            </div>
+-->            
+<!--             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+-->    
+                <!-- Testimonial 1 -->
+ <!--                <div class="bg-darker rounded-xl p-8 shadow-lg fade-in delay-1">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="text-light font-bold">Sarah Johnson</h4>
+                            <p class="text-light/60 text-sm">Marketing Director, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-light/80 mb-6">
+                        "Pulathisi transformed our brand identity with his exceptional design skills. His attention to detail and creative vision resulted in a complete rebrand that perfectly captured our company's ethos."
+                    </p>
+                    <div class="flex text-orange-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+-->                
+                <!-- Testimonial 2 -->
+<!--                <div class="bg-darker rounded-xl p-8 shadow-lg fade-in delay-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="text-light font-bold">Michael Chen</h4>
+                            <p class="text-light/60 text-sm">CEO, UrbanEats</p>
+                        </div>
+                    </div>
+                    <p class="text-light/80 mb-6">
+                        "The promotional video Pulathisi created for our restaurant chain exceeded all expectations. His cinematic approach and storytelling ability resulted in a 40% increase in customer engagement."
+                    </p>
+                    <div class="flex text-orange-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+-->                
+                <!-- Testimonial 3 -->
+<!--                <div class="bg-darker rounded-xl p-8 shadow-lg fade-in delay-3">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="text-light font-bold">Emma Rodriguez</h4>
+                            <p class="text-light/60 text-sm">Founder, GreenScape</p>
+                        </div>
+                    </div>
+                    <p class="text-light/80 mb-6">
+                        "Working with Pulathisi on our product photography was a game-changer. His ability to showcase our sustainable products in the best light directly contributed to a 30% increase in online sales."
+                    </p>
+                    <div class="flex text-orange-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center fade-in delay-4">
+                <div class="inline-grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-darker p-4 rounded-lg flex items-center justify-center">
+                        <img src="https://via.placeholder.com/150x60?text=Client+1" alt="Client Logo" class="h-8 opacity-80 hover:opacity-100 transition duration-300">
+                    </div>
+                    <div class="bg-darker p-4 rounded-lg flex items-center justify-center">
+                        <img src="https://via.placeholder.com/150x60?text=Client+2" alt="Client Logo" class="h-8 opacity-80 hover:opacity-100 transition duration-300">
+                    </div>
+                    <div class="bg-darker p-4 rounded-lg flex items-center justify-center">
+                        <img src="https://via.placeholder.com/150x60?text=Client+3" alt="Client Logo" class="h-8 opacity-80 hover:opacity-100 transition duration-300">
+                    </div>
+                    <div class="bg-darker p-4 rounded-lg flex items-center justify-center">
+                        <img src="https://via.placeholder.com/150x60?text=Client+4" alt="Client Logo" class="h-8 opacity-80 hover:opacity-100 transition duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-darker">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-light">
+                    Get In <span class="text-orange-500">Touch</span>
+                </h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-light/80 max-w-2xl mx-auto">
+                    Have a project in mind or want to discuss potential collaboration? I'd love to hear from you!
+                </p>
+            </div>
+            
+    <!-- EmailJS Initialization -->
+            <script>
+                // Initialize EmailJS with your Public Key
+                  (function(){
+                   emailjs.init("iqpQLW2smycGVewFs"); // 👉 Public Key here
+                 })();
+            </script>
+
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2 fade-in delay-1">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-light mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" 
+                                       class="w-full px-4 py-3 bg-dark border border-dark/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-light placeholder-light/50" 
+                                       placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-light mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" 
+                                       class="w-full px-4 py-3 bg-dark border border-dark/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-light placeholder-light/50" 
+                                       placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-light mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" 
+                                   class="w-full px-4 py-3 bg-dark border border-dark/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-light placeholder-light/50" 
+                                   placeholder="Project Inquiry" required>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-light mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" 
+                                      class="w-full px-4 py-3 bg-dark border border-dark/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-light placeholder-light/50" 
+                                      placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="px-6 py-3 bg-orange-500 text-dark font-medium rounded-lg hover:bg-orange-600 transition duration-300 w-full">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <script>
+
+                    
+    // Handle form submission
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                         event.preventDefault();
+
+    // Send form data via EmailJS
+                        emailjs.sendForm('service_ieg62ws', 'template_if6865p', this)
+                            .then(function(response) {
+                            alert('Message sent successfully!');
+                        }, function(error) {
+                        alert('Message sending failed. Please try again.');
+                        console.log(error);
+                        });
+                        });
+               </script>
+                
+                <div class="lg:w-1/2 space-y-8 fade-in delay-2">
+                    <div class="bg-dark p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-6 text-light">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-orange-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-light font-medium mb-1">Address</h4>
+                                    <p class="text-light/80">523/2 Kirioya Atharagallewa, Sri Lanka</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-envelope text-orange-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-light font-medium mb-1">Email</h4>
+                                    <p class="text-light/80">pulathisimadubashana1@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-phone-alt text-orange-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-light font-medium mb-1">Phone</h4>
+                                    <p class="text-light/80">+94 70 239 0480 / +94 74 308 1480</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-clock text-orange-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-light font-medium mb-1">Working Hours</h4>
+                                    <p class="text-light/80">Mon-Fri: 9AM - 6PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-dark p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-6 text-light">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/kadpulathisimadubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.behance.net%2Fpulathisimadubashana%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExQlhjcFVjc0FVRDN0d3JqQQEeSG5sM77KygWl8ErUYVknwiRwH-QlFaTgwouXiQ-xL1Cac_bG6szMiIU7DEQ_aem_OjRHGZR-8t6QjTqpN4fJEw&h=AT1qZHX_r7Fu7ciHPdqqOpuGku9MdWOTqlQAXcuKN6fRuDygHhVh4N258jQTQvHJM4rq0qwNJk5NuGp1Fg8oA0lDvHR_dmvSEf_sRhgIbSVXR8McYOX_SKjumaT51lbQqUrkAA" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            
+                        </div>
+                        
+                        <div class="mt-8">
+                            <a href="https://wa.me/94702390480?text=Hello!%20I%20saw%20your%20portfolio%20on%20your%20website%20and%20I%E2%80%99m%20interested%20in%20working%20with%20you%20on%20a%20project.%20Can%20we%20discuss%20more?" class="px-6 py-3 bg-green-500 text-light font-medium rounded-full hover:bg-green-600 transition duration-300 inline-flex items-center w-full justify-center">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-orange-500 font-bold text-2xl flex items-center">
+                        <span class="mr-2">Pulathisi</span>
+                        <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-dark font-bold">PM</div>
+                    </a>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#home" class="text-light hover:text-orange-500 transition duration-300">Home</a>
+                    <a href="#services" class="text-light hover:text-orange-500 transition duration-300">Services</a>
+                    <a href="work.html" class="text-light hover:text-orange-500 transition duration-300">My Work</a>
+                    <a href="#about" class="text-light hover:text-orange-500 transition duration-300">About</a>
+                    <a href="#contact" class="text-light hover:text-orange-500 transition duration-300">Contact</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/kadpulathisimadubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/pulathisi_madubashana" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.behance.net%2Fpulathisimadubashana%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExQlhjcFVjc0FVRDN0d3JqQQEeSG5sM77KygWl8ErUYVknwiRwH-QlFaTgwouXiQ-xL1Cac_bG6szMiIU7DEQ_aem_OjRHGZR-8t6QjTqpN4fJEw&h=AT1qZHX_r7Fu7ciHPdqqOpuGku9MdWOTqlQAXcuKN6fRuDygHhVh4N258jQTQvHJM4rq0qwNJk5NuGp1Fg8oA0lDvHR_dmvSEf_sRhgIbSVXR8McYOX_SKjumaT51lbQqUrkAA" class="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center text-light hover:bg-orange-500 hover:text-dark transition duration-300">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-dark/50 pt-8 text-center">
+                <p class="text-light/60">
+                    &copy; Copyright 2025. ┃ All rights reserved. ┃ Designed by <a href="index.html" class="text-orange-400 hover:text-orange-500 transition duplicate duration-300">Me</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-dark shadow-lg hover:bg-orange-600 transition duration-300 opacity-0 invisible transform translate-y-4">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Background Music Toggle -->
+    <button id="music-toggle" class="fixed bottom-8 left-8 w-12 h-12 bg-dark rounded-full flex items-center justify-center text-light shadow-lg hover:bg-orange-500 hover:text-dark transition duration-300">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', function() {
+            menuBtn.classList.toggle('open');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                menuBtn.classList.remove('open');
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+            }
+        });
+
+        // Animate elements on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Skill bars animation
+        const animateSkills = function() {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        };
+
+        // Check if skills section is in view
+        const skillsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateSkills();
+                    skillsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        const skillsSection = document.querySelector('#about');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // Background Music Toggle
+        const musicToggle = document.getElementById('music-toggle');
+        let audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+        audio.loop = true;
+        let isPlaying = false;
+        
+        musicToggle.addEventListener('click', function() {
+            if (isPlaying) {
+                audio.pause();
+                musicToggle.innerHTML = '<i class="fas fa-music"></i>';
+                musicToggle.classList.remove('bg-orange-500', 'text-dark');
+                musicToggle.classList.add('bg-dark', 'text-light');
+            } else {
+                audio.play();
+                musicToggle.innerHTML = '<i class="fas fa-pause"></i>';
+                musicToggle.classList.remove('bg-dark', 'text-light');
+                musicToggle.classList.add('bg-orange-500', 'text-dark');
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                // Simulate form submission
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    
+                    // Reset form
+                    setTimeout(() => {
+                        this.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Show success message
+                        alert('Thank you for your message! I will get back to you soon.');
+                    }, 1500);
+                }, 2000);
+            });
+        }
+
+        // Initialize particles.js if available
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('Particles.js loaded successfully');
+            });
+        } else {
+            console.log('Particles.js not loaded');
+        }
+    </script>
+
+    <!-- Load particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Fallback particles configuration if particles.json fails to load
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ff6b35"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ff6b35",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 2,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 140,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        });
+    </script>
+</body>
+<script src="scripts.js"></script>
+</html>
